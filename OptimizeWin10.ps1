@@ -1,3 +1,10 @@
+# === Verifikasi Tanda Tangan Digital ===
+$expected = (Get-Content -Path "signature.txt" -Encoding ASCII) -replace "Hash:\s*"
+$actual = (Get-FileHash -Path $MyInvocation.MyCommand.Definition -Algorithm SHA256).Hash
+if ($expected -ne $actual) {
+    [System.Windows.Forms.MessageBox]::Show("Peringatan: Skrip telah dimodifikasi atau rusak!", "Validasi Gagal", 'OK', 'Error')
+    exit
+}
 <#
 .SYNOPSIS
 PowerShell GUI Tool untuk Optimasi Windows 10
