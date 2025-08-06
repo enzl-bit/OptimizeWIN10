@@ -1,0 +1,7 @@
+v1.0.0 - 06 Agustus 2025
+- Tambah antarmuka GUI modern
+- Tambah profil pengguna dengan deskripsi
+- Tambah fitur restore/undo untuk setiap optimasi
+- Tambah sistem auto-update
+- Tambah log perubahan (changelog) saat update
+- Bersihkan Bloatware aman secara otomatis
