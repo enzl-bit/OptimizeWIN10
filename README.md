@@ -1,5 +1,3 @@
-# OptimizeWin10.ps1
-
 PowerShell GUI Tool untuk optimasi Windows 10.
 
 ## Fitur
